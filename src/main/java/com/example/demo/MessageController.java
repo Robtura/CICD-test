@@ -39,9 +39,4 @@ public class MessageController {
     public void saveMessage(@PathVariable String message) {
         repo.save(new Message(message));
     }
-    
-    @GetMapping(value = "/hello")
-    public String helloMessage() {
-        return "Hello my friend";
-    }
 }
